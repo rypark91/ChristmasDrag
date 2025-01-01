@@ -1,0 +1,852 @@
+html,body{
+  background-color: rgb(26, 26, 26);
+  overflow: hidden;
+}
+#box{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+}
+#target{
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    position: absolute;
+    top: 160px;
+    left: 700px;
+}
+.intro{
+  color: white;
+  text-align: center;
+}
+#sphere{
+  background-color: white;
+  width: 2000px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  top: 600px;
+  left: -190px;
+  display: none;
+}
+
+@keyframes message {
+  0%{
+    color: red;
+    text-shadow: red 0 0 8px;
+  }
+  25%{
+    color: green;
+    text-shadow: green 0 0 8px;
+  }
+  50%{
+    color: yellow;
+    text-shadow: yellow 0 0 8px;
+  }
+  75%{
+    color: white;
+    text-shadow: white 0 0 8px;
+  }
+  100%{
+    color: red;
+    text-shadow: red 0 0 8px;
+  }
+  }
+
+  
+  
+  /* The element to apply the animation to */
+  #greeting {
+    color: red;
+    font-size: 90px;
+    font-family: "Festive", serif;
+    
+  }
+  .animation{
+    animation-name: message;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+  }
+  @keyframes greetBoxAn {
+    0%{
+      top: -400px;
+      opacity: 0;
+    }
+    
+    100%{
+      top: 16px;
+      opacity: 1;
+    }
+  }
+  #greetBox{
+    position: absolute;
+    top: 16px;
+    left: 505px;
+    display: none;
+  }
+  .greetBoxAnimation{
+    animation-name: greetBoxAn;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+  }
+ .star{
+    display: none;
+ }
+  @keyframes star1An {
+    0%{
+      width: 5px;
+      height: 5px;
+    }
+    50%{
+      width: 9px;
+      height: 9px;
+    }
+    100%{
+      width: 5px;
+      height: 5px;
+    }
+  }
+  #star1{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 8px yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+  }
+  
+  .starAnimation1{
+    animation-name: star1An;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star2An {
+    0%{
+      width: 4px;
+      height: 4px;
+    }
+    50%{
+      width: 7px;
+      height: 7px;
+    }
+    100%{
+      width: 4px;
+      height: 4px;
+    }
+  }
+  #star2{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0px 0px 8px yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+  }
+  
+  .starAnimation2{
+    animation-name: star2An;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star3An {
+    0%{
+      width: 7px;
+      height: 7px;
+    }
+    50%{
+      width: 12px;
+      height: 12px;
+    }
+    100%{
+      width: 7px;
+      height: 7px;
+    }
+  }
+  #star3{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    box-shadow: 0px 0px 8px yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 1464px;
+  }
+  
+  .starAnimation3{
+    animation-name: star3An;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star4An {
+    0%{
+      width: 7px;
+      height: 7px;
+    }
+    50%{
+      width: 11px;
+      height: 11px;
+    }
+    100%{
+      width: 7px;
+      height: 7px;
+    }
+  }
+  #star4{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    box-shadow: 0px 0px 8px red;
+    border-radius: 50%;
+    position: absolute;
+    top: 126px;
+    left: 302px;
+  }
+  
+  .starAnimation4{
+    animation-name: star4An;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes star5An {
+    0%{
+      width: 3px;
+      height: 3px;
+    }
+    50%{
+      width: 5px;
+      height: 5px;
+    }
+    100%{
+      width: 3px;
+      height: 3px;
+    }
+  }
+  #star5{
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 8px red;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 954px;
+  }
+  
+  .starAnimation5{
+    animation-name: star5An;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star6An {
+    0%{
+      width: 6px;
+      height: 6px;
+    }
+    50%{
+      width: 10px;
+      height: 10px;
+    }
+    100%{
+      width: 6px;
+      height: 6px;
+    }
+  }
+  #star6{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0px 0px 8px red;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    left: 171px;
+  }
+  
+  .starAnimation6{
+    animation-name: star6An;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star7An {
+    0%{
+      width: 4px;
+      height: 4px;
+    }
+    50%{
+      width: 8px;
+      height: 8px;
+    }
+    100%{
+      width: 4px;
+      height: 4px;
+    }
+  }
+  #star7{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0px 0px 8px orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 377px;
+    left: 1284px;
+  }
+  
+  .starAnimation7{
+    animation-name: star7An;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star8An {
+    0%{
+      width: 6px;
+      height: 6px;
+    }
+    50%{
+      width: 9px;
+      height: 9px;
+    }
+    100%{
+      width: 6px;
+      height: 6px;
+    }
+  }
+  #star8{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0px 0px 8px orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 153px;
+    left: 630px;
+  }
+  
+  .starAnimation8{
+    animation-name: star8An;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star9An {
+    0%{
+      width: 8px;
+      height: 8px;
+    }
+    50%{
+      width: 11px;
+      height: 11px;
+    }
+    100%{
+      width: 8px;
+      height: 8px;
+    }
+  }
+  #star9{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 8px orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 125px;
+    left: 1205px;
+  }
+  
+  .starAnimation9{
+    animation-name: star9An;
+    animation-duration: 3.1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star10An {
+    0%{
+      width: 3px;
+      height: 3px;
+    }
+    50%{
+      width: 7px;
+      height: 7px;
+    }
+    100%{
+      width: 3px;
+      height: 3px;
+    }
+  }
+  #star10{
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 8px green;
+    border-radius: 50%;
+    position: absolute;
+    top: 443px;
+    left: 782px;
+  }
+  
+  .starAnimation10{
+    animation-name: star10An;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star11An {
+    0%{
+      width: 8px;
+      height: 8px;
+    }
+    50%{
+      width: 10px;
+      height: 10px;
+    }
+    100%{
+      width: 8px;
+      height: 8px;
+    }
+  }
+  #star11{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 9px green;
+    border-radius: 50%;
+    position: absolute;
+    top: 61px;
+  left: 143px;
+  }
+  
+  .starAnimation11{
+    animation-name: star11An;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star12An {
+    0%{
+      width: 3px;
+      height: 3px;
+    }
+    50%{
+      width: 5px;
+      height: 5px;
+    }
+    100%{
+      width: 3px;
+      height: 3px;
+    }
+  }
+  #star12{
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 8px green;
+    border-radius: 50%;
+    position: absolute;
+    top: 252px;
+  left: 1512px;
+  }
+  
+  .starAnimation12{
+    animation-name: star12An;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star13An {
+    0%{
+      width: 4px;
+      height: 4px;
+    }
+    50%{
+      width: 8px;
+      height: 8px;
+    }
+    100%{
+      width: 4px;
+      height: 4px;
+    }
+  }
+  #star13{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0px 0px 8px blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 294px;
+    left: 435px;
+  }
+  
+  .starAnimation13{
+    animation-name: star13An;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star14An {
+    0%{
+      width: 6px;
+      height: 6px;
+    }
+    50%{
+      width: 9px;
+      height: 9px;
+    }
+    100%{
+      width: 6px;
+      height: 6px;
+    }
+  }
+  #star14{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0px 0px 8px blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+  left: 1346px;
+  }
+  
+  .starAnimation14{
+    animation-name: star14An;
+    animation-duration: 3.8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star15An {
+    0%{
+      width: 8px;
+      height: 8px;
+    }
+    50%{
+      width: 13px;
+      height: 13px;
+    }
+    100%{
+      width: 8px;
+      height: 8px;
+    }
+  }
+  #star15{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 8px blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 526px;
+  left: 1079px;
+  }
+  
+  .starAnimation15{
+    animation-name: star15An;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star16An {
+    0%{
+      width: 5px;
+      height: 5px;
+    }
+    50%{
+      width: 7px;
+      height: 7px;
+    }
+    100%{
+      width: 5px;
+      height: 5px;
+    }
+  }
+  #star16{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 8px indigo;
+    border-radius: 50%;
+    position: absolute;
+    top: 410px;
+  left: 542px;
+  }
+  
+  .starAnimation16{
+    animation-name: star16An;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star17An {
+    0%{
+      width: 8px;
+      height: 8px;
+    }
+    50%{
+      width: 11px;
+      height: 11px;
+    }
+    100%{
+      width: 8px;
+      height: 8px;
+    }
+  }
+  #star17{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 8px indigo;
+    border-radius: 50%;
+    position: absolute;
+    top: 475px;
+    left: 1425px;
+  }
+  
+  .starAnimation17{
+    animation-name: star17An;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star18An {
+    0%{
+      width: 7px;
+      height: 7px;
+    }
+    50%{
+      width: 13px;
+      height: 13px;
+    }
+    100%{
+      width: 7px;
+      height: 7px;
+    }
+  }
+  #star18{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    box-shadow: 0px 0px 8px indigo;
+    border-radius: 50%;
+    position: absolute;
+    top: 541px;
+    left: 92px;
+  }
+  
+  .starAnimation18{
+    animation-name: star18An;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star19An {
+    0%{
+      width: 6px;
+      height: 6px;
+    }
+    50%{
+      width: 8px;
+      height: 8px;
+    }
+    100%{
+      width: 6px;
+      height: 6px;
+    }
+  }
+  #star19{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0px 0px 8px violet;
+    border-radius: 50%;
+    position: absolute;
+    top: 301px;
+    left: 757px;
+  }
+  
+  .starAnimation19{
+    animation-name: star19An;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star20An {
+    0%{
+      width: 5px;
+      height: 5px;
+    }
+    50%{
+      width: 10px;
+      height: 10px;
+    }
+    100%{
+      width: 5px;
+      height: 5px;
+    }
+  }
+  #star20{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 8px violet;
+    border-radius: 50%;
+    position: absolute;
+    top: 142px;
+    left: 1016px;
+  }
+  
+  .starAnimation20{
+    animation-name: star20An;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star21An {
+    0%{
+      width: 6px;
+      height: 6px;
+    }
+    50%{
+      width: 9px;
+      height: 9px;
+    }
+    100%{
+      width: 6px;
+      height: 6px;
+    }
+  }
+  #star21{
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    box-shadow: 0px 0px 8px violet;
+    border-radius: 50%;
+    position: absolute;
+    top: 211px;
+    left: 196px;
+  }
+  
+  .starAnimation21{
+    animation-name: star21An;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star22An {
+    0%{
+      width: 3px;
+      height: 3px;
+    }
+    50%{
+      width: 8px;
+      height: 8px;
+    }
+    100%{
+      width: 3px;
+      height: 3px;
+    }
+  }
+  #star22{
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 8px whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 245px;
+    left: 1160px;
+  }
+  
+  .starAnimation22{
+    animation-name: star22An;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star23An {
+    0%{
+      width: 7px;
+      height: 7px;
+    }
+    50%{
+      width: 10px;
+      height: 10px;
+    }
+    100%{
+      width: 7px;
+      height: 7px;
+    }
+  }
+  #star23{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    box-shadow: 0px 0px 8px whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 830px;
+  }
+  
+  .starAnimation23{
+    animation-name: star23An;
+    animation-duration: 2.9s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes star24An {
+    0%{
+      width: 5px;
+      height: 5px;
+    }
+    50%{
+      width: 9px;
+      height: 9px;
+    }
+    100%{
+      width: 5px;
+      height: 5px;
+    }
+  }
+  #star24{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 8px whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 460px;
+  }
+  
+  .starAnimation24{
+    animation-name: star24An;
+    animation-duration: 3.1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes star25An {
+    0%{
+      width: 18px;
+      height: 18px;
+    }
+    50%{
+      width: 24px;
+      height: 24px;
+    }
+    100%{
+      width: 18px;
+      height: 18px;
+    }
+  }
+  #star25{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    box-shadow: 0px 0px 8px whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 731px;
+  }
+  
+  .starAnimation25{
+    animation-name: star25An;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
